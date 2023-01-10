@@ -181,6 +181,20 @@ padding: 16px 32px;
 .main-button:hover, .main-button:focus {
 background-color: var(--pressed-state);}
 
+/* Overlay */
+.overlay {
+    height: 600px;
+    outline: 1px solid transparent;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2E2F42;
+}
+
 /* FEATURES */
 
 
@@ -189,6 +203,33 @@ background-color: var(--pressed-state);}
 {display: flex;
 gap: 24px; 
 }
+.list-item {}
+.list-item::before {
+    content: '';
+    display: block;
+    height: 112px;
+    background-color: #F4F4FD;
+    outline: 1px solid #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-position: center;
+    background-size: 264px 112px;
+    background-repeat: no-repeat;
+    
+}
+.icon-strategy::before{
+    background-image: url(../images/antenna.svg);
+    background-size: 64px 64px;
+}
+.icon-punctuality::before{
+    background-image: url(../images/clock.svg);
+    background-size: 64px 64px;
+}
+.icon-diligence::before{background-image: url(../images/diagram.svg);
+    background-size: 64px 64px;
+    }
+.icon-technologies::before{background-image: url(../images/astronaut.svg);
+    background-size: 64px 64px;}
 
 /* WHAT WE ARE DOING */
 .work {
@@ -264,6 +305,10 @@ text-align: center;
 }
 
 .none {text-align: left;}
+.social-link {
+    content:'';
+    display: inline-block;}
+.social-link.icon-instagram{}
 
 /* FOOTER */
 .footer {
