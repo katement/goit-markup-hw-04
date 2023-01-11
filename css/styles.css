@@ -305,16 +305,78 @@ text-align: center;
 }
 
 .none {text-align: left;}
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    margin-top: 12px;
+   
+}
+.social-items {
+    width: 40px;
+    height: 40px;
+    color: var(--light);
+}
+.social-icon {
+    
+}
 .social-link {
-    content:'';
-    display: inline-block;}
+background-color: var(--primary-brand);
+width: 100%;
+height: 100%;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.social-link:hover, .social-link:focus{
+    background-color: var(--pressed-state);
+}
 .social-link.icon-instagram{}
+.customers {
+    width: 1128px;
+    justify-content: center;
+    text-align: center;
+    
+}
+.customer-link{fill: var(--subtle-text);
+
+}
+.customer-link:hover, .customer-link:focus{
+    fill:var(--pressed-state)
+}
+.customer-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+}
+
+.customer-icon {
+    margin-top: 72px;
+    border: 1px solid #8E8F99;
+border-radius: 4px;
+ fill: var(--subtle-text);
+ 
+}
+.customer-icon:hover, .customer-icon:focus {
+    fill: var(--pressed-state);
+    border-color: var(--pressed-state);
+}
+
+.customer-items{
+}
 
 /* FOOTER */
 .footer {
 background-color:  var(--dark);
 padding-top: 100px;
 padding-bottom: 100px;
+
+}
+.added {
+   display: flex;
 }
 .footer-logo {font-family: var(--secondary-font);
 font-style: normal;
@@ -340,6 +402,34 @@ width: 264px;
 
 
 }
+.social-block {
+width: 208px;
+height: 80px;
+margin-left: 120px;
+}
+.footer-social-heading{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--white);
+}
+.footer-social-list {display: flex;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+    margin-top: 12px;
+}
+
+.footer-social-link {
+    background-color:rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 /* PORTFOLIO */
 
 .portfolio-main {
